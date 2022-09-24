@@ -746,6 +746,13 @@ Config.MenuItems = {
                 event = 'qb-hotdogjob:client:ToggleSell',
                 shouldClose = true
             },{
+                id = 'vehicleflip',
+                title = 'Flip Vehicle',
+                icon = 'car-crash',
+                type = 'client',
+                event = 'vehicle:flipit',
+                shouldClose = true
+            }, {
                 
                     id = 'clothesmenu',
                     title = 'Clothing',
