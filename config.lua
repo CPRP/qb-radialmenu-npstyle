@@ -1046,6 +1046,13 @@ Config.JobInteractions = {
                     type = 'client',
                     event = 'police:client:CheckStatus',
                     shouldClose = true
+		}, {
+                    id = 'unlock',
+                    title = 'Unlock Veh.',
+                    icon = 'key',
+                    type = 'client',
+                    event = 'vehiclekeys:client:PoliceUnlock',
+                    shouldClose = true
                 }, {
                     id = 'escort',
                     title = 'Escort',
