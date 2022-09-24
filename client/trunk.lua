@@ -75,6 +75,10 @@ RegisterNetEvent('qb-kidnapping:client:SetKidnapping', function(bool)
     isKidnapping = bool
 end)
 
+RegisterNetEvent('vehicle:flipit')
+AddEventHandler('vehicle:flipit', function()
+end)
+
 RegisterNetEvent('qb-trunk:client:KidnapTrunk', function()
     local closestPlayer, distance = QBCore.Functions.GetClosestPlayer()
     if distance ~= -1 and distance < 2 then
