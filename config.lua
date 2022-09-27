@@ -110,6 +110,13 @@ Config.MenuItems = {
                 type = 'client',
                 event = 'police:client:EscortPlayer',
                 shouldClose = true
+            }, {
+                id = 'escort3',
+                title = 'Hostage',
+                icon = 'user-friends',
+                type = 'client',
+                event = 'TakeHostage:client:hostage',
+                shouldClose = true
             }          
         }
     },
@@ -1046,7 +1053,7 @@ Config.JobInteractions = {
                     type = 'client',
                     event = 'police:client:CheckStatus',
                     shouldClose = true
-		}, {
+                }, {
                     id = 'unlock',
                     title = 'Unlock Veh.',
                     icon = 'key',
@@ -1272,7 +1279,7 @@ Config.Commands = {
         Desc = "Take your mask off/on",
         Button = 6,
         Name = "Mask"
-    }
+    },
 }
 
 local bags = {[40] = true, [41] = true, [44] = true, [45] = true}
