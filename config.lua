@@ -1102,13 +1102,6 @@ Config.JobInteractions = {
             type = 'client',
             event = 'qb-tow:client:TowVehicle',
             shouldClose = true
-        }, {
-            id = 'unlock',
-            title = 'Unlock Veh.',
-            icon = 'key',
-            type = 'client',
-            event = 'vehiclekeys:client:PoliceUnlock',
-            shouldClose = true
         }
     },
     ["police"] = {
