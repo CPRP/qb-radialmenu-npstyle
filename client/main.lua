@@ -9,24 +9,6 @@ local DynamicMenuItems = {}
 local FinalMenuItems = {}
 -- Functions
 
-local function mdt()
-    if QBCore.Functions.GetPlayerData().job.name == "police" then
-        mdtid = exports['qb-radialmenu']:AddOption({
-            id = 'mdt',
-            title = 'Mdt',
-            icon = 'tablet',
-            type = 'command',
-            event = 'mdt',
-            shouldClose = true
-        }, mdtid)
-    else
-        if mdtid ~= nil then
-            exports['qb-radialmenu']:RemoveOption(mdtid)
-            mdtid = nil
-        end
-    end
-end
-
 
 local function deepcopy(orig) -- modified the deep copy function from http://lua-users.org/wiki/CopyTable
     local orig_type = type(orig)
@@ -151,7 +133,7 @@ local function SetupRadialMenu()
         FinalMenuItems = {
             [1] = {
                 id = 'emergencybutton1',
-                title = '10-13A',
+                title = '10-13',
                 icon = 'sad-tear',
                 type = 'client',
                 event = 'ps-dispatch:client:officerdown',
@@ -159,10 +141,10 @@ local function SetupRadialMenu()
             },
             [2] = {
                 id = 'emergencybutton2',
-                title = '10-13B',
+                title = '10-14',
                 icon = 'sad-cry',
                 type = 'client',
-                event = 'ps-dispatch:client:officerdown',
+                event = 'ps-dispatch:client:emsdown',
                 shouldClose = true,
             },
         }
@@ -181,8 +163,10 @@ local function setRadialState(bool, sendMessage, delay)
     if bool then
         TriggerEvent('qb-radialmenu:client:onRadialmenuOpen')
         SetupRadialMenu()
+        PlaySoundFrontend(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", 1)
     else
         TriggerEvent('qb-radialmenu:client:onRadialmenuClose')
+        PlaySoundFrontend(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", 1)
     end
 
     SetNuiFocus(bool, bool)

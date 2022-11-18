@@ -1,22 +1,17 @@
-# qb-radialmenu A LOT OF CHANGES COMING SOON!!
-Simple edits of qb-radialmenu to look like nopixels radialmenu. Most of it is just edits but there is some addons to the radialmenu to. Enjoy!
+# qb-radialmenu 
+Simple edits of qb-radialmenu to look like nopixels radialmenu. Most of it is just edits but there is some addons to the radialmenu to. Enjoy! (New updates now here!)
 
 # Dependencies
 qb-core: https://github.com/qbcore-framework/qb-core
 
 veh-control: https://github.com/Manvaril/vehcontrol
 
+dpemotes: https://github.com/andristum/dpemotes
+
 # Preview
-https://streamable.com/3xbdxt
+https://streamable.com/t0xhus
 
-![image](https://user-images.githubusercontent.com/108560629/179027979-53b7a925-159e-4dc7-a3f1-49cd05fed857.png)
-
-# Installation
-```Step 1```
-- Rename ```qb-radialmenu-npstyle``` to > ```qb-radialmenu```
-
-```Step 2```
-- Drop folder into the ```[qb]``` folder
+![Screenshot 2022-10-04 225843](https://user-images.githubusercontent.com/108560629/193971610-73419fed-f974-48cc-971c-ba128640f393.png)
 
 # Credits
 
@@ -24,10 +19,10 @@ https://github.com/KevinGirardx/qb-radialmenu
 
 https://github.com/TonyCapon3/qb-radialmenu
 
-# To-Do
--- Edit walking styles icons to match Nopixels | Working On
+# Installation
+```Step 1``` Rename ```qb-radialmenu-npstyle``` to ```qb-radialmenu```
 
--- Add Expressions similar to nopixels
+```Step 2``` Drag folder in the the ```[qb]``` Folder in your resources
 
 # License
 
