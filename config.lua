@@ -1096,13 +1096,13 @@ Config.JobInteractions = {
                     type = 'client',
                     event = 'police:client:spawnLight',
                     shouldClose = false
-                }, {
-                    id = 'spikestrip',
-                    title = 'Spike Strips',
-                    icon = 'caret-up',
-                    type = 'client',
-                    event = 'police:client:SpawnSpikeStrip',
-                    shouldClose = false
+                -- }, {
+                --     id = 'spikestrip',
+                --     title = 'Spike Strips',
+                --     icon = 'caret-up',
+                --     type = 'client',
+                --     event = 'police:client:SpawnSpikeStrip',
+                --     shouldClose = false
                 }, {
                     id = 'deleteobject',
                     title = 'Remove object',
