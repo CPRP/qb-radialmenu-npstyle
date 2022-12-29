@@ -829,13 +829,13 @@ Config.MenuItems = {
                     }
                 }
             }, {
-                id = 'cornerselling',
-                title = 'Corner Sell',
-                icon = 'cannabis',
-                type = 'client',
-                event = 'qb-drugs:client:cornerselling',
-                shouldClose = true
-            }, {
+            --     id = 'cornerselling',
+            --     title = 'Corner Sell',
+            --     icon = 'cannabis',
+            --     type = 'client',
+            --     event = 'qb-drugs:client:cornerselling',
+            --     shouldClose = true
+            -- }, {
                 id = 'givenum',
                 title = 'Give Contact',
                 icon = 'address-book',
@@ -1197,33 +1197,33 @@ Config.JobInteractions = {
             shouldClose = true
         }
     },
-    ["tow"] = {
-        {
-            id = 'togglenpc',
-            title = 'Toggle NPC',
-            icon = 'toggle-on',
-            type = 'client',
-            event = 'jobs:client:ToggleNpc',
-            shouldClose = true
-        }, {
-            id = 'towvehicle',
-            title = 'Tow vehicle',
-            icon = 'truck-pickup',
-            type = 'client',
-            event = 'qb-tow:client:TowVehicle',
-            shouldClose = true
-        }
-    },
-    ["mechanic"] = {
-        {
-            id = 'towvehicle',
-            title = 'Tow vehicle',
-            icon = 'truck-pickup',
-            type = 'client',
-            event = 'qb-tow:client:TowVehicle',
-            shouldClose = true
-        }
-    },
+    -- ["tow"] = {
+    --     {
+    --         id = 'togglenpc',
+    --         title = 'Toggle NPC',
+    --         icon = 'toggle-on',
+    --         type = 'client',
+    --         event = 'jobs:client:ToggleNpc',
+    --         shouldClose = true
+    --     }, {
+    --         id = 'towvehicle',
+    --         title = 'Tow vehicle',
+    --         icon = 'truck-pickup',
+    --         type = 'client',
+    --         event = 'qb-tow:client:TowVehicle',
+    --         shouldClose = true
+    --     }
+    -- },
+    -- ["mechanic"] = {
+    --     {
+    --         id = 'towvehicle',
+    --         title = 'Tow vehicle',
+    --         icon = 'truck-pickup',
+    --         type = 'client',
+    --         event = 'qb-tow:client:TowVehicle',
+    --         shouldClose = true
+    --     }
+    -- },
     ["hotdog"] = {
         {
             id = 'togglesell',
