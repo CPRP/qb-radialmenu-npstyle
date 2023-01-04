@@ -110,3 +110,51 @@ RegisterNetEvent("qb-radialmenu:client:togglebenny", function()
     SetNewWaypoint(closestLocation)
 	QBCore.Functions.Notify('Closest location marked', 'primary', 2500)
 end)
+
+RegisterNetEvent("qb-radialmenu:client:toggledigital", function()
+	local coords = GetEntityCoords(PlayerPedId())
+	local closest = 1500
+	local closestLocation
+
+	for k,v in pairs(Config.Digital) do
+		local dist = GetDistanceBetweenCoords(coords, v)
+		if dist < closest then
+			closest = dist
+			closestLocation = v
+		end
+    end
+    SetNewWaypoint(closestLocation)
+	QBCore.Functions.Notify('Closest location marked', 'primary', 2500)
+end)
+
+RegisterNetEvent("qb-radialmenu:client:togglerobs", function()
+	local coords = GetEntityCoords(PlayerPedId())
+	local closest = 1500
+	local closestLocation
+
+	for k,v in pairs(Config.Robs) do
+		local dist = GetDistanceBetweenCoords(coords, v)
+		if dist < closest then
+			closest = dist
+			closestLocation = v
+		end
+    end
+    SetNewWaypoint(closestLocation)
+	QBCore.Functions.Notify('Closest location marked', 'primary', 2500)
+end)
+
+RegisterNetEvent("qb-radialmenu:client:toggleatm", function()
+	local coords = GetEntityCoords(PlayerPedId())
+	local closest = 1500
+	local closestLocation
+
+	for k,v in pairs(Config.Atm) do
+		local dist = GetDistanceBetweenCoords(coords, v)
+		if dist < closest then
+			closest = dist
+			closestLocation = v
+		end
+    end
+    SetNewWaypoint(closestLocation)
+	QBCore.Functions.Notify('Closest location marked', 'primary', 2500)
+end)
