@@ -20,21 +20,21 @@ Config.MenuItems = {
         items = {
             {
                 id = 'gasstation',
-                title = 'Gas Station',
+                title = 'Fuel',
                 icon = 'gas-pump',
                 type = 'client',
                 event = 'qb-radialmenu:client:togglegas',
                 shouldClose = true
             }, {
                 id = 'barbershop',
-                title = 'Barber Shop',
+                title = 'Barber',
                 icon = 'cut',
                 type = 'client',
                 event = 'qb-radialmenu:client:togglebarber',
                 shouldClose = true
             }, {
                 id = 'clothing',
-                title = 'Clothing Shop',
+                title = 'Clothing',
                 icon = 'tshirt',
                 type = 'client',
                 event = 'qb-radialmenu:client:toggleclothing',
@@ -48,10 +48,38 @@ Config.MenuItems = {
                 shouldClose = true
             }, {
                 id = 'benny',
-                title = 'Bennys',
+                title = 'Mechanic',
                 icon = 'paint-roller',
                 type = 'client',
                 event = 'qb-radialmenu:client:togglebenny',
+                shouldClose = true
+            }, {
+                id = 'youtool',
+                title = 'Hardware',
+                icon = 'wrench',
+                type = 'client',
+                event = 'qb-radialmenu:client:toggleyoutool',
+                shouldClose = true
+            }, {
+                id = 'digital',
+                title = 'Digital Den',
+                icon = 'calculator',
+                type = 'client',
+                event = 'qb-radialmenu:client:toggledigital',
+                shouldClose = true
+            }, {
+                id = 'robs',
+                title = 'Liquor',
+                icon = 'beer',
+                type = 'client',
+                event = 'qb-radialmenu:client:togglerobs',
+                shouldClose = true
+            }, {
+                id = 'atm',
+                title = 'ATMs',
+                icon = 'credit-card',
+                type = 'client',
+                event = 'qb-radialmenu:client:toggleatm',
                 shouldClose = true
             }, {
                 id = 'ammunation',
@@ -1487,6 +1515,16 @@ Config.Clothing = {
 	vector3(121.76, -224.6, 53.56)
 }
 
+Config.Robs = {
+    vector4(-1221.38, -907.89, 12.33, 27.51),
+    vector4(-1486.82, -377.48, 40.16, 130.89),
+    vector4(-2966.41, 391.62, 15.04, 87.82),
+    vector4(1165.15, 2710.78, 38.16, 177.96),
+    vector4(1134.3, -983.26, 46.42, 276.3),
+    -- Paleto liquor
+    vector4(-160.54, 6320.85, 31.59, 317.79)
+}
+
 Config.Stores = {
     vector4(24.47, -1346.62, 29.5, 271.66),
     vector4(-3039.54, 584.38, 7.91, 17.27),
@@ -1502,12 +1540,90 @@ Config.Stores = {
     vector4(-1820.02, 794.03, 138.09, 135.45),
     vector4(1164.71, -322.94, 69.21, 101.72),
     vector4(1697.87, 4922.96, 42.06, 324.71),
+    -- LTD LOCATIONS
+    vector4(-47.42, -1758.67, 29.42, 47.26),
+    vector4(-706.17, -914.64, 19.22, 88.77),
+    vector4(-1819.53, 793.49, 138.09, 131.46),
+    vector4(1164.82, -323.66, 69.21, 106.86),
 }
 
 Config.Youtool = {
     vector4(45.68, -1749.04, 29.61, 53.13),
     vector4(2747.71, 3472.85, 55.67, 255.08),
     vector4(-421.83, 6136.13, 31.88, 228.2),
+}
+
+Config.Atm = {
+    vector3(265.9, 213.86, 106.28),
+    vector3(265.56, 212.98, 106.28),
+    vector3(265.19, 211.91, 106.28),
+    vector3(264.86, 211.03, 106.28),
+    vector3(264.52, 210.06, 106.28),
+    vector3(236.64, 219.72, 106.29),
+    vector3(237.04, 218.72, 106.29),
+    vector3(237.5, 217.87, 106.29),
+    vector3(237.93, 216.94, 106.29),
+    vector3(238.36, 216.03, 106.29),
+    vector3(-386.54, 6046.29, 31.5),
+    vector3(-282.82, 6226.24, 31.49),
+    vector3(-132.74, 6366.79, 31.48),
+    vector3(-95.76, 6457.41, 31.46),
+    vector3(-97.52, 6455.65, 31.47),
+    vector3(155.95, 6642.99, 31.6),
+    vector3(173.92, 6638.16, 31.57),
+    vector3(2558.65, 350.92, 108.62),
+    vector3(1077.78, -776.64, 58.35),
+    vector3(1138.14, -468.88, 66.73),
+    vector3(1166.93, -455.96, 66.81),
+    vector3(285.37, 143.07, 104.17),
+    vector3(-165.43, 234.81, 94.92),
+    vector3(-165.4, 232.73, 94.92),
+    vector3(-1410.41, -98.76, 52.43),
+    vector3(-1409.85, -100.51, 52.38),
+    vector3(-1206.0, -324.94, 37.86),
+    vector3(-1205.23, -326.55, 37.86),
+    vector3(-2072.28, -317.27, 13.32),
+    vector3(-2974.7, 380.15, 15.0),
+    vector3(-2959.01, 487.45, 15.46),
+    vector3(-2956.87, 487.36, 15.46),
+    vector3(-3043.98, 594.32, 7.74),
+    vector3(-3241.35, 997.74, 12.55),
+    vector3(-1305.59, -706.64, 25.32),
+    vector3(-537.85, -854.69, 29.28),
+    vector3(-709.98, -818.71, 23.73),
+    vector3(-712.87, -818.71, 23.73),
+    vector3(-526.71, -1223.18, 18.45),
+    vector3(-256.47, -715.94, 33.55),
+    vector3(-259.13, -723.29, 33.54),
+    vector3(-203.82, -861.3, 30.27),
+    vector3(111.38, -774.96, 31.44),
+    vector3(114.56, -776.13, 31.42),
+    vector3(112.46, -819.65, 31.34),
+    vector3(118.93, -883.68, 31.12),
+    vector3(-846.97, -340.29, 38.68),
+    vector3(-846.41, -341.41, 38.68),
+    vector3(24.46, -945.94, 29.36),
+    vector3(-254.48, -692.74, 33.61),
+    vector3(-1569.95, -546.94, 34.96),
+    vector3(-1570.91, -547.63, 34.96),
+    vector3(289.14, -1282.29, 29.6),
+    vector3(289.18, -1256.84, 29.44),
+    vector3(296.04, -896.22, 29.24),
+    vector3(296.74, -894.26, 29.24),
+    vector3(-301.63, -829.73, 32.43),
+    vector3(-303.23, -829.44, 32.43),
+    vector3(5.27, -919.87, 29.56),
+    vector3(-1200.61, -885.62, 13.26),
+}
+
+Config.Digital = {
+    vector4(391.76, -832.79, 29.29, 223.77),
+    vector4(1136.99, -473.13, 66.53, 254.85),
+    vector4(-509.55, 278.63, 83.31, 176.65),
+    vector4(-656.27, -854.73, 24.5, 359.39),
+    vector4(-1088.29, -254.3, 37.76, 252.7),
+    vector4(1787.21, 2559.61, 45.67, 146.27), --PrisonDigitalDen
+    vector4(4520.02, -4515.15, 4.49, 53.98), --CairoPerico
 }
 
 Config.Gun = {
@@ -1525,10 +1641,16 @@ Config.Gun = {
 }
 
 Config.Benny = {
-    vector3(-205.6992, -1312.7377, 31.1588),
-    vector3(-41.8942, -1044.1943, 28.6297),
-    vector3(725.8828, -1088.7747, 22.1693),
-    vector3(-1420.1882, -441.8745, 35.9097),
-    vector3(108.3242, 6624.0996, 31.7873),
-    vector3(140.6093, -3030.3933, 7.0409),
-}
+    vector3(-205.6992, -1312.7377, 31.1588), -- 9038
+    vector3(-41.8942, -1044.1943, 28.6297), -- 8166
+    vector3(725.8828, -1088.7747, 22.1693), -- 8181
+    vector3(-1420.1882, -441.8745, 35.9097), -- 7173
+    vector3(108.3242, 6624.0996, 31.7873), -- 1063
+    vector3(140.6093, -3030.3933, 7.0409), -- 10071
+    vector3(866.18, -2111.61, 30.41), -- 9274
+    vector3(-1144.69, -1990.57, 13.16), -- 10032
+    vector3(-1144.69, -1990.57, 13.16), -- 8144
+    vector3(945.65, -986.94, 39.28), -- 8198
+    vector3(-357.52, -134.07, 38.85), -- 7204
+    vector3(1175.27, 2645.85, 37.72), -- 4025
+} 
