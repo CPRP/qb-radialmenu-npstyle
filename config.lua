@@ -864,11 +864,11 @@ Config.MenuItems = {
             --     event = 'qb-drugs:client:cornerselling',
             --     shouldClose = true
             -- }, {
-                id = 'givenum',
-                title = 'Give Contact',
-                icon = 'address-book',
+                id = 'checkwarrant',
+                title = 'Check Warrants',
+                icon = 'question',
                 type = 'client',
-                event = 'qb-phone:client:GiveContactDetails',
+                event = 'checkwarrant',
                 shouldClose = true
             }, {
                 id = 'togglehotdogsell',
