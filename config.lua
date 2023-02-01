@@ -10,7 +10,7 @@ Config.MenuItems = {
         title = 'Emotes',
         icon = 'face-meh-blank',
         type = 'client',
-        event = 'dp:RecieveMenu',
+        event = 'rp:RecieveMenu',
         shouldClose = true,
     },
     [2] = {
@@ -871,18 +871,18 @@ Config.MenuItems = {
                 event = 'checkwarrant',
                 shouldClose = true
             }, {
-                id = 'togglehotdogsell',
-                title = 'Hotdog Selling',
-                icon = 'hotdog',
-                type = 'client',
-                event = 'qb-hotdogjob:client:ToggleSell',
-                shouldClose = true
-            }, {
-                id = 'vehicleflip',
+            --     id = 'togglehotdogsell',
+            --     title = 'Hotdog Selling',
+            --     icon = 'hotdog',
+            --     type = 'client',
+            --     event = 'qb-hotdogjob:client:ToggleSell',
+            --     shouldClose = true
+            -- }, {
+                id = 'flipvehicle',
                 title = 'Flip Vehicle',
                 icon = 'car-crash',
                 type = 'client',
-                event = 'vehicle:flipit',
+                event = 'jim-mechanic:flipvehicle',
                 shouldClose = true
             }, {
                 id = 'getintrunk',
@@ -1224,7 +1224,7 @@ Config.JobInteractions = {
             event = 'qb-taxi:client:DoTaxiNpc',
             shouldClose = true
         }
-    },
+    }
     -- ["tow"] = {
     --     {
     --         id = 'togglenpc',
@@ -1252,16 +1252,16 @@ Config.JobInteractions = {
     --         shouldClose = true
     --     }
     -- },
-    ["hotdog"] = {
-        {
-            id = 'togglesell',
-            title = 'Toggle sell',
-            icon = 'hotdog',
-            type = 'client',
-            event = 'qb-hotdogjob:client:ToggleSell',
-            shouldClose = true
-        }
-    }
+    -- ["hotdog"] = {
+    --     {
+    --         id = 'togglesell',
+    --         title = 'Toggle sell',
+    --         icon = 'hotdog',
+    --         type = 'client',
+    --         event = 'qb-hotdogjob:client:ToggleSell',
+    --         shouldClose = true
+    --     }
+    -- }
 }
 
 
