@@ -120,7 +120,7 @@ local function selectOption(t, t2)
 end
 
 local function IsPoliceOrEMS()
-    return (PlayerData.job.name == "police" or PlayerData.job.name == "ambulance")
+    return (PlayerData.job.name == "police" or PlayerData.job.name == "ambulance" or PlayerData.job.name == "sasp" or PlayerData.job.name == "sapr" or PlayerData.job.name == "bcso" or PlayerData.job.name == "ambulance")
 end
 
 local function IsDowned()
